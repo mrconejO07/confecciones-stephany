@@ -1,0 +1,311 @@
+<!-- SECTION -->
+<div class="section">
+  <!-- container -->
+  <div class="container">
+    <!-- row -->
+    <div class="row">
+      <!-- section title -->
+      <div class="col-md-12">
+        <div class="section-title">
+          <a [routerLink]="['/productos/termicos']">
+            <h3 class="title">CONJUNTOS T&eacute;RMICOS</h3>
+            (Ver todos)</a
+          >
+          <div class="section-nav"></div>
+        </div>
+      </div>
+      <!-- PRODUCTOS NACIONALES slick -->
+      <ngx-slick-carousel
+        class="carousel"
+        #slickModal="slick-carousel"
+        [config]="slideConfig"
+      >
+        <!-- product -->
+        <div
+          ngxSlickItem
+          *ngFor="let slide of slidesNac"
+          class="slide"
+          style="padding: 10px"
+        >
+          <div class="product">
+            <div class="product-img">
+              <img src="{{ slide.img }}" alt="" width="100%" />
+              <div class="product-label">
+                <!-- <span class="sale">-30%</span> -->
+                <span class="new">NEW</span>
+              </div>
+            </div>
+
+            <div class="product-body">
+              <h3 class="product-category">
+                <a href="#">T&eacute;rmicos</a>
+              </h3>
+              <h4 class="product-name">
+                <a href="#">Conjuntos T&eacute;rmicos</a>
+              </h4>
+
+              <div class="product-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /product -->
+      </ngx-slick-carousel>
+
+      <!-- section title -->
+      <div class="col-md-12">
+        <div class="section-title">
+          <a [routerLink]="['/productos/varios']">
+            <h3 class="title">Variedad</h3>
+            (Ver todos)</a
+          >
+          <div class="section-nav"></div>
+        </div>
+      </div>
+      <!-- PRODUCTOS NACIONALES slick -->
+      <ngx-slick-carousel
+        class="carousel"
+        #slickModal="slick-carousel"
+        [config]="slideConfig"
+      >
+        <!-- product -->
+        <div
+          ngxSlickItem
+          *ngFor="let slide of slidesVarios"
+          class="slide"
+          style="padding: 10px"
+        >
+          <div class="product">
+            <div class="product-img">
+              <img src="{{ slide.img }}" alt="" width="100%" />
+              <div class="product-label">
+                <!-- <span class="sale">-30%</span> -->
+                <span class="new">NEW</span>
+              </div>
+            </div>
+
+            <div class="product-body">
+              <h3 class="product-category">
+                <a href="#">Varios</a>
+              </h3>
+              <h4 class="product-name">
+                <a href="#">Variedad</a>
+              </h4>
+
+              <div class="product-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /product -->
+      </ngx-slick-carousel>
+
+      <!-- section title -->
+      <div class="col-md-12">
+        <div class="section-title">
+          <a [routerLink]="['/productos/imp-pe']">
+            <h3 class="title">CONJUNTOS COCONUEZ</h3>
+            (Ver todos)</a
+          >
+          <div class="section-nav"></div>
+        </div>
+      </div>
+      <!-- PRODUCTOS PERU slick -->
+      <ngx-slick-carousel
+        class="carousel"
+        #slickModal="slick-carousel"
+        [config]="slideConfig"
+      >
+        <!-- product -->
+        <div
+          ngxSlickItem
+          *ngFor="let slide of slidesPe"
+          class="slide"
+          style="padding: 10px"
+        >
+          <div class="product">
+            <div class="product-img">
+              <img src="{{ slide.img }}" alt="" width="100%" />
+              <div class="product-label">
+                <!-- <span class="sale">-30%</span> -->
+                <span class="new">NEW</span>
+              </div>
+            </div>
+
+            <div class="product-body">
+              <p class="product-category">100% algod&oacute;n</p>
+              <h3 class="product-name">
+                <a href="#">Conjuntos coconuez</a>
+              </h3>
+
+              <div class="product-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /product -->
+      </ngx-slick-carousel>
+
+      <!-- section title -->
+      <div class="col-md-12">
+        <div class="section-title">
+          <a [routerLink]="['/productos/imp-co']">
+            <h3 class="title">CONJUNTOS FASHION</h3>
+            (Ver todos)</a
+          >
+          <div class="section-nav"></div>
+        </div>
+      </div>
+      <!-- PRODUCTOS COLOMBIA slick -->
+      <ngx-slick-carousel
+        class="carousel"
+        #slickModal="slick-carousel"
+        [config]="slideConfig"
+      >
+        <!-- product -->
+        <div
+          ngxSlickItem
+          *ngFor="let slide of slidesCo"
+          class="slide"
+          style="padding: 10px"
+        >
+          <div class="product">
+            <div class="product-img">
+              <img src="{{ slide.img }}" alt="" width="100%" />
+              <div class="product-label">
+                <!-- <span class="sale">-30%</span> -->
+                <span class="new">NEW</span>
+              </div>
+            </div>
+
+            <div class="product-body">
+              <p class="product-category">Fashion</p>
+              <h3 class="product-name">
+                <a href="#">Baby Sue&ntilde;os</a>
+                <br />
+                <a href="#">/ Goticas Baby</a>
+              </h3>
+
+              <div class="product-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /product -->
+      </ngx-slick-carousel>
+
+      <!-- section title -->
+      <div class="col-md-12">
+        <div class="section-title">
+          <a [routerLink]="['/productos/mallitas']">
+            <h3 class="title">Mallitas</h3>
+            (Ver todos)</a
+          >
+          <div class="section-nav"></div>
+        </div>
+      </div>
+      <!-- PRODUCTOS EN MALLA slick -->
+      <ngx-slick-carousel
+        class="carousel"
+        #slickModal="slick-carousel"
+        [config]="slideConfig"
+      >
+        <!-- product -->
+        <div
+          ngxSlickItem
+          *ngFor="let slide of slidesMallas"
+          class="slide"
+          style="padding: 10px"
+        >
+          <div class="product">
+            <div class="product-img">
+              <img src="{{ slide.img }}" alt="" width="100%" />
+              <div class="product-label">
+                <!-- <span class="sale">-30%</span> -->
+                <span class="new">NEW</span>
+              </div>
+            </div>
+
+            <div class="product-body">
+              <h3 class="product-category">
+                <a href="#">Varios</a>
+              </h3>
+              <h4 class="product-name">
+                <a href="#">Mallitas</a>
+              </h4>
+
+              <div class="product-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /product -->
+      </ngx-slick-carousel>
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</div>
+<!-- /SECTION -->
+
+<!-- NEWSLETTER -->
+<div id="newsletter" class="section">
+  <!-- container -->
+  <div class="container">
+    <!-- row -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="newsletter">
+          <p>Sign Up for the <strong>NEWSLETTER</strong></p>
+          <form>
+            <input class="input" type="email" placeholder="Enter Your Email" />
+            <button class="newsletter-btn">
+              <i class="fa fa-envelope"></i> Subscribe
+            </button>
+          </form>
+          <ul class="newsletter-follow">
+            <li>
+              <a href="https://www.facebook.com/confecciones.stephany7"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/jfam_51/"><i class="fa fa-pinterest"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</div>
+<!-- /NEWSLETTER -->
